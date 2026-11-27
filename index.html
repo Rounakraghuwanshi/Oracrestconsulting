@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var _t=localStorage.getItem("oc-theme");document.documentElement.setAttribute("data-theme",_t==="light"?"light":"dark")}catch(e){document.documentElement.setAttribute("data-theme","dark")}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="ORACREST Consulting delivers Oracle Fusion HCM consulting, implementation, optimization, all Oracle HCM modules, and training."><meta name="theme-color" content="#0D1220">
+<title>ORACREST Consulting | Oracle Fusion HCM Consulting &amp; Digital Transformation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--bg2:#F4F6F9;--ink:#121826;--mut:#566073;--line:#E2E6EC;--card:#fff;--red:#D8322C;--rt:#C42A24;--sh:0 1px 2px rgba(13,18,32,.05),0 14px 34px rgba(13,18,32,.08);--shl:0 24px 56px rgba(13,18,32,.16);--r:16px;--hf:'Plus Jakarta Sans',system-ui,'Segoe UI',Arial,sans-serif;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0F131B;--bg2:#161B25;--ink:#EDEFF3;--mut:#A3ABB8;--line:#262D3A;--card:#1A202B;--rt:#FF6B64;--sh:0 1px 2px rgba(0,0,0,.3),0 14px 34px rgba(0,0,0,.35);color-scheme:dark}}
+:root[data-theme=dark]{--bg:#0F131B;--bg2:#161B25;--ink:#EDEFF3;--mut:#A3ABB8;--line:#262D3A;--card:#1A202B;--rt:#FF6B64;--sh:0 1px 2px rgba(0,0,0,.3),0 14px 34px rgba(0,0,0,.35);color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--hf);line-height:1.15;margin:0;letter-spacing:-.02em}
+p{margin:0}
+.w{max-width:1160px;margin:auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+@keyframes up{from{opacity:0;transform:translateY(26px)}}
+@keyframes fade{from{opacity:0}}
+@keyframes flt{50%{transform:translateY(-9px)}}
+@keyframes ul{to{background-size:100% 100%}}
+#app.pg{animation:fade .5s}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid #E8EBF0;padding-top:env(safe-area-inset-top,0px);transition:box-shadow .3s}
+header.sc{box-shadow:0 8px 28px rgba(13,18,32,.1)}
+.bar{display:flex;align-items:center;gap:20px;height:72px}
+.logo img{height:36px;width:auto;display:block;transition:transform .3s}
+.logo:hover img{transform:scale(1.04)}
+nav{margin-left:auto;display:flex;align-items:center;gap:2px}
+nav a:not(.btn){position:relative;padding:10px 14px;color:#121826;text-decoration:none;font:600 14.5px var(--hf);transition:color .2s}
+nav a:not(.btn)::after{content:'';position:absolute;left:14px;right:14px;bottom:3px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav a:not(.btn):hover,nav a[aria-current]{color:#C42A24}
+nav a:not(.btn):hover::after,nav a[aria-current]::after{transform:scaleX(1)}
+nav .btn{margin-left:12px;padding:10px 18px;font-size:14px}
+.menu{display:none;margin-left:auto;background:#fff;border:2px solid #121826;color:#121826;padding:6px 14px;font:700 14px var(--hf);border-radius:8px;cursor:pointer}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:var(--red);color:#fff;font:700 14px var(--hf);text-decoration:none;border:2px solid var(--red);border-radius:10px;cursor:pointer;box-shadow:0 8px 20px rgba(216,50,44,.28);transition:transform .25s,box-shadow .25s,background .25s,color .25s,border-color .25s}
+.btn::after{content:'\2192';transition:transform .25s}
+.btn:hover{transform:translateY(-3px);background:#BF2822;border-color:#BF2822;box-shadow:0 14px 26px rgba(216,50,44,.36)}
+.btn:hover::after{transform:translateX(4px)}
+.btn.o{background:transparent;color:var(--ink);border-color:var(--ink);box-shadow:none}
+.btn.o:hover{background:var(--ink);color:var(--bg)}
+.hero .btn.o{border-color:rgba(255,255,255,.55)}
+.hero .btn.o:hover{background:#fff;color:#0D1220;border-color:#fff}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:56px 0 100px;color:var(--ink);--ink:#fff;--mut:#B4BCCB;--card:#1A2339;--line:#2D3853;background:radial-gradient(900px 520px at 88% 8%,rgba(216,50,44,.30),transparent 60%),radial-gradient(700px 420px at 0% 100%,rgba(70,100,190,.24),transparent 60%),linear-gradient(135deg,#0D1220,#172036)}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.13) 1px,transparent 1.4px);background-size:28px 28px;-webkit-mask-image:linear-gradient(100deg,transparent 10%,#000 80%);mask-image:linear-gradient(100deg,transparent 10%,#000 80%);pointer-events:none}
+.hero .w{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero.s{padding:44px 0 50px}.hero.s .w{display:block}
+.hero.s::after{content:'';position:absolute;right:5%;top:50%;width:260px;height:260px;margin-top:-130px;border-radius:50%;pointer-events:none;background:repeating-radial-gradient(circle,rgba(216,50,44,.5) 0 2px,transparent 2px 26px);-webkit-mask-image:radial-gradient(circle,#000 30%,transparent 72%);mask-image:radial-gradient(circle,#000 30%,transparent 72%)}
+.hero h1{font-size:clamp(24px,2.7vw,34px);font-weight:700;letter-spacing:-.025em;line-height:1.15;animation:up .8s cubic-bezier(.2,.7,.2,1) backwards}
+.hero.s h1{font-size:clamp(23px,2.5vw,31px);max-width:28ch}
+.hl{display:block;width:fit-content;color:#FF7D75;background:linear-gradient(transparent 84%,rgba(255,125,117,.35) 0) no-repeat;background-size:0 100%;animation:ul .9s .6s cubic-bezier(.2,.7,.2,1) forwards}
+.sub{color:var(--mut);font-size:15.5px;max-width:54ch;margin:14px 0 24px;animation:up .8s .12s cubic-bezier(.2,.7,.2,1) backwards}
+.hero .btns{animation:up .8s .24s cubic-bezier(.2,.7,.2,1) backwards}
+.pills{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 0;padding:0;animation:up .8s .36s cubic-bezier(.2,.7,.2,1) backwards}
+.pills li{padding:5px 12px;font-size:12.5px;font-weight:600;color:#DDE2EC;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);border-radius:99px}
+.pills li::before{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-right:8px}
+.art{display:flex;justify-content:center;animation:up .9s .15s cubic-bezier(.2,.7,.2,1) backwards}
+.art svg{width:100%;max-width:440px;height:auto;overflow:visible}
+.f1{animation:flt 8s ease-in-out infinite}.f2{animation:flt 6s -2s ease-in-out infinite}.f3{animation:flt 7s -4s ease-in-out infinite}.f4{animation:flt 5s -1s ease-in-out infinite}.f5{animation:flt 6.5s -3s ease-in-out infinite}.f6{animation:flt 7.5s -5s ease-in-out infinite}
+.tn{font:800 22px var(--hf);fill:var(--ink)}.tc{font:600 11.5px Inter,Arial,sans-serif;fill:var(--mut)}.th{font:700 13px var(--hf);fill:var(--ink)}.ts{font:600 10px Inter,Arial,sans-serif;fill:var(--mut)}
+/* stats */
+.stats{position:relative;z-index:3;margin-top:-62px}
+.stats .w>div{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shl);overflow:hidden}
+.stats .w>.mstrip{display:flex;align-items:center;gap:22px;padding:16px 24px;border-radius:14px;box-shadow:var(--shl)}
+.mstrip>p{flex:none;font:700 13px var(--hf);letter-spacing:.08em;text-transform:uppercase;color:var(--mut);max-width:15ch;line-height:1.3}
+.mstrip ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px;border-left:1px solid var(--line);padding-left:22px}
+.mstrip li{display:inline-flex;align-items:center;gap:7px;padding:6px 14px;font:600 13.5px Inter,sans-serif;color:var(--ink);background:var(--bg2);border:1px solid var(--line);border-radius:99px;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.mstrip li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--red);transition:background .25s}
+.mstrip li:hover{background:var(--red);color:#fff;border-color:var(--red);transform:translateY(-2px)}
+.mstrip li:hover::before{background:#fff}
+@media(max-width:900px){.stats{margin-top:-48px}.stats .w>.mstrip{flex-direction:column;align-items:flex-start;gap:12px;padding:16px}.mstrip ul{border-left:0;padding-left:0}.mstrip>p{max-width:none}}
+/* sections */
+.sec{padding:64px 0}.alt{background:var(--bg2)}
+.t{font-size:clamp(22px,2.4vw,30px);font-weight:800;max-width:24ch;margin-bottom:12px}
+.t::after{content:'';display:block;width:56px;height:4px;margin-top:16px;background:var(--red);border-radius:2px;transition:width .4s}
+.t:hover::after{width:96px}
+.lead{color:var(--mut);max-width:68ch;margin-bottom:36px;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);padding:30px 26px;border-radius:var(--r);box-shadow:var(--sh);transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.card::after{content:'';position:absolute;left:0;bottom:0;width:100%;height:4px;background:linear-gradient(90deg,var(--red),#FF8A82);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shl);border-color:transparent}
+.card:hover::after{transform:scaleX(1)}
+.card h3{font-size:18.5px;margin-bottom:8px;transition:color .25s}.card:hover h3{color:var(--rt)}
+.card p{color:var(--mut);font-size:15.5px}
+.ic{display:grid;place-items:center;width:50px;height:50px;margin-bottom:18px;border-radius:13px;background:rgba(216,50,44,.1);color:var(--rt);transition:background .3s,color .3s,transform .3s}
+.ic svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card:hover .ic{background:var(--red);color:#fff;transform:rotate(-6deg) scale(1.06)}
+.card .n{display:inline-grid;place-items:center;width:38px;height:38px;background:var(--red);color:#fff;font:800 16px var(--hf);margin-bottom:14px;border-radius:50%;box-shadow:0 0 0 6px rgba(216,50,44,.14)}
+.tag{display:inline-block;margin-top:14px;padding:4px 12px;font-size:13px;font-weight:600;color:var(--mut);background:var(--bg2);border-radius:99px}
+.svc{display:grid;grid-template-columns:1fr 1.2fr;gap:36px;padding:36px 24px;border-top:1px solid var(--line);transition:background .3s,box-shadow .3s}
+.svc h3{font-size:23px;margin-bottom:8px;transition:color .25s}.svc p{color:var(--mut)}
+.svc:hover{background:var(--bg2);box-shadow:inset 4px 0 0 var(--red)}.svc:hover h3{color:var(--rt)}
+.chips{display:flex;flex-wrap:wrap;gap:9px;list-style:none;padding:0;margin:0;align-content:flex-start}
+.chips li{padding:7px 15px;border:1px solid var(--line);background:var(--card);font-size:14px;font-weight:500;border-radius:99px;cursor:default;transition:background .25s,color .25s,border-color .25s,transform .25s}
+.chips li:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translateY(-3px)}
+.chips.big li{padding:12px 22px;font-size:16px;font-weight:600}
+.alt,.dk{position:relative;overflow:hidden;color:var(--ink);--ink:#fff;--mut:#B4BCCB;--bg:#0F1524;--bg2:rgba(255,255,255,.06);--card:rgba(255,255,255,.05);--line:rgba(255,255,255,.14);--rt:#FF7D75;background:radial-gradient(700px 360px at 100% 0%,rgba(216,50,44,.22),transparent 60%),radial-gradient(600px 320px at 0% 100%,rgba(70,100,190,.16),transparent 60%),linear-gradient(135deg,#0D1220,#172036)}
+.dk .chips li{backdrop-filter:blur(4px)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:22px;counter-reset:s}
+.steps li{position:relative;padding-top:68px;counter-increment:s}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:48px;height:48px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font:800 18px var(--hf);box-shadow:0 0 0 7px rgba(216,50,44,.14);z-index:1}
+.steps li::after{content:'';position:absolute;top:23px;left:62px;right:-8px;height:2px;background:repeating-linear-gradient(90deg,var(--mut) 0 6px,transparent 6px 12px);opacity:.4}
+.steps li:last-child::after{display:none}
+.steps h3{font-size:17.5px;margin-bottom:6px}.steps p{font-size:15px;color:var(--mut)}
+/* band + cta */
+.band{position:relative;overflow:hidden;background:linear-gradient(120deg,#D8322C,#A71E19);color:#fff;padding:64px 0}
+.band::before{content:'';position:absolute;right:-80px;top:-120px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(255,255,255,.07)}
+.band .w{position:relative}
+.band .t,.band .lead{color:#fff}.band .t::after{background:#fff}.band .lead{margin-bottom:26px}
+.band .btn{background:#fff;color:#121826;border-color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.band .btn:hover{background:#121826;color:#fff;border-color:#121826}
+.ctar{display:flex;align-items:center;justify-content:space-between;gap:32px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--red);border-radius:var(--r);padding:34px 38px;box-shadow:var(--sh)}
+.ctar .lead{margin-bottom:0}
+/* forms */
+.form{display:grid;grid-template-columns:1fr 1fr;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px;box-shadow:var(--sh)}
+label{display:grid;gap:7px;font-weight:600;font-size:14.5px}
+.full{grid-column:1/-1}
+input,select,textarea{font:inherit;padding:12px 14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:10px;width:100%;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--red);box-shadow:0 0 0 4px rgba(216,50,44,.16)}
+.note{margin-top:12px;color:var(--mut);font-size:14.5px}
+.two{display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:start}
+aside{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+dl{margin:0}dt{font-weight:700;margin-top:16px;font-family:var(--hf)}dd{margin:0;color:var(--mut)}dd a{color:var(--rt);text-decoration:none;font-weight:600}
+.job h3{margin-bottom:6px}.job .m{color:var(--mut);font-size:14.5px;margin-bottom:10px}.job .btn{margin-top:16px}
+/* split layouts */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.split .t{max-width:none}.split .lead{margin-bottom:0}
+.what{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--red);border-radius:var(--r);padding:26px;box-shadow:var(--shl)}
+.wk{font:700 12.5px var(--hf);letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:16px}
+.wg{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.wi{padding:16px;background:var(--bg2);border-radius:12px;transition:transform .25s,box-shadow .25s}
+.wi:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+.wi .n{display:inline-grid;place-items:center;width:28px;height:28px;background:var(--red);color:#fff;font:700 13px var(--hf);border-radius:50%;margin-bottom:8px}
+.wi h3{font-size:16px;margin-bottom:4px}.wi p{font-size:14px;color:var(--mut)}
+.wf{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);font-size:15px}.wf b{color:var(--rt);margin-right:6px}
+.wl{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.wl li{padding:16px 18px;background:var(--bg2);border-left:4px solid var(--red);border-radius:0 12px 12px 0;transition:transform .25s,box-shadow .25s}
+.wl li:hover{transform:translateX(6px);box-shadow:var(--sh)}
+.wl h3{font-size:16px;margin-bottom:2px}.wl p{font-size:14px;color:var(--mut)}
+/* footer */
+footer{background:#0D1220;color:#A9B0BE;border-top:4px solid var(--red);padding:64px 0 0;font-size:15px}
+footer .c{display:block}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1.2fr;gap:40px;padding-bottom:44px}
+.fl{display:inline-block;background:#fff;padding:9px 15px;border-radius:8px}.fl img{height:30px;width:auto;display:block}
+.fb p{margin:18px 0 4px;max-width:30ch}
+.fb .btn{margin-top:14px;padding:10px 18px;color:#fff}
+.fg b{display:block;color:#fff;font:700 13px var(--hf);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+.fg span{display:block;padding:4px 0}
+footer a:not(.btn){display:block;color:#C9CED8;text-decoration:none;padding:4px 0;transition:color .2s,transform .2s}
+footer a:not(.btn):hover{color:#fff;transform:translateX(6px)}
+.fbot{border-top:1px solid #232B3B;padding:22px 0;font-size:14px;color:#8892A3}
+/* reveal */
+.rv{opacity:0}
+.rv.in{opacity:1;animation:up .8s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:var(--d,0s)}
+/* responsive */
+@media(max-width:900px){
+.hero .w,.svc,.form,.two,.split{grid-template-columns:1fr}
+.hero{padding:36px 0 84px}.hero.s{padding:32px 0 36px}.hero.s::after{display:none}
+.hero h1{font-size:23px}.hero.s h1{font-size:22px}
+.art svg{max-width:380px}
+.sec{padding:52px 0}.band{padding:44px 0}.split{gap:28px}
+.stats .w>div{grid-template-columns:1fr 1fr}
+.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.stat{padding:18px 16px}
+.steps{grid-template-columns:1fr;gap:26px}.steps li{padding:0 0 0 70px;min-height:50px}.steps li::after{display:none}
+.ctar{flex-direction:column;align-items:flex-start;padding:26px}
+.wg{grid-template-columns:1fr}
+.fg{grid-template-columns:1fr 1fr;gap:32px}
+.bar{height:62px}.logo img{height:30px}
+.menu{display:block}
+nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:#fff;padding:8px 24px 20px;border-bottom:1px solid #E8EBF0;box-shadow:0 18px 30px rgba(13,18,32,.12)}
+nav.open{display:flex}nav .btn{margin:12px 0 0;justify-content:center}
+nav a:not(.btn)::after{left:14px;right:auto;width:28px}}
+@media(max-width:520px){.stats .w>div{grid-template-columns:1fr}.stat{border-right:0!important;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.fg{grid-template-columns:1fr}.form{padding:22px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1}.hl{background-size:100% 100%!important}}
+
+/* ===== unified navy + red palette ===== */
+header{background:rgba(11,16,30,.92);border-bottom:1px solid rgba(255,255,255,.08)}
+header::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:2px;background:linear-gradient(90deg,transparent,var(--red) 18%,var(--red) 82%,transparent);opacity:.6;pointer-events:none}
+header.sc{box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.bar{height:74px}
+.logo img{height:36px}
+nav{gap:4px}
+nav a:not(.btn){color:#CBD1DE;border-radius:9px;padding:9px 15px}
+nav a:not(.btn)::after{left:15px;right:15px;bottom:2px}
+nav a:not(.btn):hover,nav a[aria-current]{color:#fff;background:rgba(255,255,255,.07)}
+.menu{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);color:#fff}
+.menu:hover{background:#fff;color:#0D1220}
+.mstrip li::before{display:none}
+.mstrip li{padding:6px 13px;font-size:13px}
+.mstrip ul{gap:7px}
+footer{background:#090D18}
+.fl{background:none;padding:0}.fl img{height:34px}
+@media(max-width:900px){.bar{height:62px}.logo img{height:30px}nav{background:#0D1220;border-bottom:1px solid rgba(255,255,255,.1);box-shadow:0 18px 30px rgba(0,0,0,.45)}nav a:not(.btn){padding:12px 14px}}
+
+.hi{display:grid;place-items:center;flex:none;width:38px;height:38px;margin-left:10px;border-radius:50%;border:1px solid rgba(255,255,255,.28);color:#fff;transition:background .25s,border-color .25s,transform .25s}
+.hi:hover{background:var(--red);border-color:var(--red);transform:translateY(-2px)}
+nav a:not(.btn):not(.hi){font-size:14px;padding:8px 13px}
+@media(max-width:900px){.hi{margin:8px 0 0 14px}}
+
+nav a.hi{padding:0;color:#fff;background:transparent;border-radius:50%}
+nav a.hi::after{display:none}
+nav a.hi:hover{background:var(--red);color:#fff}
+
+/* ===== full dark navy theme ===== */
+:root:not([data-theme=light]){--bg:#0B1020;--bg2:#121A2E;--ink:#EDEFF3;--mut:#A9B2C2;--line:rgba(255,255,255,.12);--card:#151D32;--rt:#FF7D75;--sh:0 1px 2px rgba(0,0,0,.3),0 14px 34px rgba(0,0,0,.35);--shl:0 24px 56px rgba(0,0,0,.5);color-scheme:dark}
+body{background:var(--bg);color:var(--ink)}
+.stat:hover,.mstrip li{background:var(--bg2)}
+.mstrip li{border-color:var(--line)}
+.mstrip li:hover{background:var(--red)}
+.sec:not(.alt):not(.dk){background:radial-gradient(800px 380px at 0% 0%,rgba(70,100,190,.10),transparent 60%),var(--bg)}
+/* ===== theme toggle button ===== */
+.tg{display:grid;place-items:center;flex:none;width:40px;height:40px;margin-left:12px;padding:0;border-radius:50%;cursor:pointer;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.28);color:#fff;transition:background .25s,border-color .25s,color .25s,transform .25s}
+.tg svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.tg:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translateY(-2px)}
+.tg:hover svg{transform:rotate(25deg)}
+.tg .moon{display:none}
+:root[data-theme=light] .tg .sun{display:none}
+:root[data-theme=light] .tg .moon{display:block}
+html.tt *,html.tt *::before,html.tt *::after{transition:background-color .35s,color .35s,border-color .35s,fill .35s,box-shadow .35s!important}
+@media(max-width:900px){.tg{order:2;margin-left:auto;width:38px;height:38px}.menu{order:3;margin-left:10px}}
+
+/* ===== light theme (dark stays the default) ===== */
+:root[data-theme=light]{--bg:#fff;--bg2:#F4F6F9;--ink:#121826;--mut:#566073;--line:#E2E6EC;--card:#fff;--rt:#C42A24;--sh:0 1px 2px rgba(13,18,32,.05),0 14px 34px rgba(13,18,32,.08);--shl:0 24px 56px rgba(13,18,32,.16);color-scheme:light}
+:root[data-theme=light] header{background:rgba(255,255,255,.92);border-bottom:1px solid #E8EBF0}
+:root[data-theme=light] header.sc{box-shadow:0 10px 30px rgba(13,18,32,.12)}
+:root[data-theme=light] nav a:not(.btn){color:#121826}
+:root[data-theme=light] nav a:not(.btn):hover,:root[data-theme=light] nav a[aria-current]{color:#C42A24;background:rgba(13,18,32,.05)}
+:root[data-theme=light] .menu{background:#fff;border-color:#121826;color:#121826}
+:root[data-theme=light] .menu:hover{background:#121826;color:#fff}
+:root[data-theme=light] .tg,:root[data-theme=light] .hi{background:#fff;border-color:rgba(13,18,32,.22);color:#121826}
+:root[data-theme=light] .tg:hover,:root[data-theme=light] .hi:hover{background:var(--red);border-color:var(--red);color:#fff}
+:root[data-theme=light] nav a.hi{color:#121826}
+:root[data-theme=light] .hero{--ink:#121826;--mut:#566073;--card:#fff;--line:#E2E6EC;background:radial-gradient(900px 520px at 88% 8%,rgba(216,50,44,.12),transparent 60%),radial-gradient(700px 420px at 0% 100%,rgba(70,100,190,.12),transparent 60%),linear-gradient(135deg,#fff,#EEF2F8)}
+:root[data-theme=light] .hero::before{background-image:radial-gradient(rgba(13,18,32,.13) 1px,transparent 1.4px)}
+:root[data-theme=light] .hero .btn.o{border-color:rgba(13,18,32,.4);color:#121826}
+:root[data-theme=light] .hero .btn.o:hover{background:#121826;color:#fff;border-color:#121826}
+:root[data-theme=light] .hl{color:#C42A24;background-image:linear-gradient(transparent 84%,rgba(216,50,44,.28) 0)}
+:root[data-theme=light] .pills li{color:#334155;border-color:rgba(13,18,32,.18);background:rgba(13,18,32,.04)}
+:root[data-theme=light] .alt,:root[data-theme=light] .dk{--ink:#121826;--mut:#566073;--bg:#F4F6F9;--bg2:#fff;--card:#fff;--line:#E2E6EC;--rt:#C42A24;background:#F4F6F9}
+:root[data-theme=light] .sec:not(.alt):not(.dk){background:#fff}
+@media(max-width:900px){:root[data-theme=light] nav{background:#fff;border-bottom:1px solid #E8EBF0;box-shadow:0 18px 30px rgba(13,18,32,.12)}}
+</style>
+</head>
+<body>
+<header><div class="w bar">
+<a class="logo" href="#home" aria-label="ORACREST Consulting home"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgLTE4IDU0NSAxMDgiIHdpZHRoPSI1NDUiIGhlaWdodD0iMTA4IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9Ik9SQUNSRVNUIj48cGF0aCBmaWxsPSIjRDgzMjJDIiBkPSJNNTYuNCAzMC40VjQyLjRRNTYuNCA1MCA1NC42IDU1LjhRNTIuNyA2MS41IDQ5LjMgNjUuM1E0NS45IDY5LjEgNDEuMiA3MS4xUTM2LjQgNzMgMzAuNiA3M1EyNC44IDczIDIwLjEgNzEuMVExNS4zIDY5LjEgMTEuOCA2NS4zUTguNCA2MS41IDYuNSA1NS44UTQuNiA1MCA0LjYgNDIuNFYzMC40UTQuNiAyMi42IDYuNSAxNi43UTguMyAxMC45IDExLjggNi45UTE1LjIgMyAyMCAxUTI0LjcgLTEgMzAuNSAtMVEzNi4zIC0xIDQxIDFRNDUuOCAzIDQ5LjMgNi45UTUyLjcgMTAuOSA1NC42IDE2LjdRNTYuNCAyMi42IDU2LjQgMzAuNFpNNDIgNDIuNFYzMC4zUTQyIDI1LjIgNDEuMyAyMS41UTQwLjUgMTcuOSAzOS4xIDE1LjZRMzcuNiAxMy4zIDM1LjUgMTIuMlEzMy4zIDExLjEgMzAuNSAxMS4xUTI3LjcgMTEuMSAyNS41IDEyLjJRMjMuNCAxMy4zIDIxLjkgMTUuNlEyMC41IDE3LjkgMTkuOCAyMS41UTE5IDI1LjIgMTkgMzAuM1Y0Mi40UTE5IDQ3LjQgMTkuOCA1MC45UTIwLjUgNTQuNCAyMiA1Ni42UTIzLjUgNTguOCAyNS42IDU5LjlRMjcuOCA2MSAzMC42IDYxUTMzLjQgNjEgMzUuNSA1OS45UTM3LjcgNTguOCAzOS4xIDU2LjZRNDAuNSA1NC40IDQxLjMgNTAuOVE0MiA0Ny40IDQyIDQyLjRaTTc0IDBIOTcuMVExMDQuMyAwIDEwOS40IDIuNVExMTQuNSA0LjkgMTE3LjIgOS44UTExOS45IDE0LjYgMTE5LjkgMjEuOFExMTkuOSAyNy42IDExOC40IDMxLjdRMTE2LjggMzUuOSAxMTMuOSAzOC42UTExMC45IDQxLjMgMTA2LjkgNDNMMTAyLjUgNDUuNkg4My43TDgzLjcgMzMuNkg5Ni43UTk5LjcgMzMuNiAxMDEuNiAzMi4zUTEwMy42IDMxIDEwNC41IDI4LjZRMTA1LjUgMjYuMiAxMDUuNSAyMi45UTEwNS41IDE5LjUgMTA0LjYgMTcuMVExMDMuOCAxNC42IDEwMS45IDEzLjNRMTAwLjEgMTIgOTcuMSAxMkg4OC41VjcySDc0Wk0xMDYuNyA3MiA5My41IDM5LjkgMTA4LjcgMzkuOSAxMjIuMiA3MS4zVjcyWk0xNjMgMTIuOSAxNDcuNiA3MkgxMzIuM0wxNTQuOCAwSDE2NC4zWk0xNzUuMyA3MiAxNTkuNyAxMi45IDE1OC4yIDBIMTY3LjlMMTkwLjYgNzJaTTE3NS44IDQ1LjFWNTcuMkgxNDMuM1Y0NS4xWiIvPjxyZWN0IHg9IjIwMy42IiB5PSItMTgiIHdpZHRoPSIzNDEuMCIgaGVpZ2h0PSIxMDgiIGZpbGw9IiNEODMyMkMiLz48cGF0aCBmaWxsPSIjRTNFNUU4IiBkPSJNMjYzLjggNDhIMjc4LjJRMjc3LjkgNTYuMSAyNzQuOSA2MS43UTI3MS45IDY3LjMgMjY2LjUgNzAuMVEyNjEgNzMgMjUzLjMgNzNRMjQ3LjMgNzMgMjQyLjcgNzFRMjM4IDY5IDIzNC44IDY1LjFRMjMxLjUgNjEuMiAyMjkuOCA1NS40UTIyOC4yIDQ5LjYgMjI4LjIgNDIuMVYyOS45UTIyOC4yIDIyLjQgMjI5LjkgMTYuNlEyMzEuNyAxMC44IDIzNSA2LjlRMjM4LjMgMyAyNDIuOSAxUTI0Ny42IC0xIDI1My41IC0xUTI2MS40IC0xIDI2Ni42IDEuOVEyNzEuOSA0LjkgMjc0LjggMTAuNlEyNzcuNyAxNi4yIDI3OC4zIDI0LjRIMjYzLjlRMjYzLjcgMTkuMiAyNjIuNyAxNi4zUTI2MS43IDEzLjQgMjU5LjUgMTIuMVEyNTcuNCAxMC45IDI1My41IDEwLjlRMjUwLjYgMTAuOSAyNDguNSAxMS45UTI0Ni41IDEzIDI0NS4xIDE1LjJRMjQzLjggMTcuNCAyNDMuMiAyMVEyNDIuNiAyNC42IDI0Mi42IDI5LjhWNDIuMVEyNDIuNiA0Ny4yIDI0My4xIDUwLjhRMjQzLjcgNTQuNCAyNDQuOCA1Ni43UTI0NiA1OC45IDI0OC4xIDYwUTI1MC4xIDYxIDI1My4zIDYxUTI1NyA2MSAyNTkuMiA1OS45UTI2MS41IDU4LjggMjYyLjUgNTZRMjYzLjYgNTMuMiAyNjMuOCA0OFpNMjk0LjIgMEgzMTcuM1EzMjQuNSAwIDMyOS42IDIuNVEzMzQuNyA0LjkgMzM3LjQgOS44UTM0MC4yIDE0LjYgMzQwLjIgMjEuOFEzNDAuMiAyNy42IDMzOC42IDMxLjdRMzM3IDM1LjkgMzM0LjEgMzguNlEzMzEuMiA0MS4zIDMyNy4xIDQzTDMyMi43IDQ1LjZIMzA0TDMwMy45IDMzLjZIMzE2LjlRMzE5LjkgMzMuNiAzMjEuOCAzMi4zUTMyMy44IDMxIDMyNC44IDI4LjZRMzI1LjcgMjYuMiAzMjUuNyAyMi45UTMyNS43IDE5LjUgMzI0LjkgMTcuMVEzMjQgMTQuNiAzMjIuMSAxMy4zUTMyMC4zIDEyIDMxNy4zIDEySDMwOC43VjcySDI5NC4yWk0zMjYuOSA3MiAzMTMuNyAzOS45IDMyOC45IDM5LjkgMzQyLjQgNzEuM1Y3MlpNMzk4LjUgNjBWNzJIMzY3LjJWNjBaTTM3MS43IDBWNzJIMzU3LjJWMFpNMzk0LjMgMjkuMlY0MC44SDM2Ny4yVjI5LjJaTTM5OC40IDBWMTJIMzY3LjJWMFpNNDQ0LjQgNTMuMVE0NDQuNCA1MS4xIDQ0NCA0OS41UTQ0My43IDQ4IDQ0Mi42IDQ2LjZRNDQxLjQgNDUuMyA0MzkuMyA0NFE0MzcuMiA0Mi42IDQzMy45IDQxLjJRNDI5LjkgMzkuNSA0MjYuMSAzNy42UTQyMi40IDM1LjcgNDE5LjMgMzMuMlE0MTYuMyAzMC43IDQxNC42IDI3LjJRNDEyLjggMjMuOCA0MTIuOCAxOS4xUTQxMi44IDE0LjYgNDE0LjUgMTAuOVE0MTYuMSA3LjIgNDE5LjIgNC41UTQyMi4zIDEuOSA0MjYuNCAwLjRRNDMwLjUgLTEgNDM1LjYgLTFRNDQyLjUgLTEgNDQ3LjYgMS45UTQ1Mi43IDQuNyA0NTUuNSA5LjdRNDU4LjMgMTQuNyA0NTguMyAyMS4ySDQ0My44UTQ0My44IDE4LjEgNDQyLjkgMTUuOFE0NDIuMSAxMy41IDQ0MC4yIDEyLjFRNDM4LjMgMTAuOCA0MzUuNCAxMC44UTQzMi42IDEwLjggNDMwLjggMTEuOVE0MjkgMTMgNDI4LjEgMTQuOVE0MjcuMiAxNi44IDQyNy4yIDE5LjJRNDI3LjIgMjEgNDI4LjEgMjIuNFE0MjkgMjMuOCA0MzAuNSAyNC45UTQzMiAyNiA0MzQuMSAyN1E0MzYuMiAyOC4xIDQzOC44IDI5LjFRNDQzLjcgMzEgNDQ3LjQgMzMuM1E0NTEuMiAzNS42IDQ1My43IDM4LjRRNDU2LjIgNDEuMyA0NTcuNSA0NC45UTQ1OC44IDQ4LjQgNDU4LjggNTNRNDU4LjggNTcuNSA0NTcuMiA2MS4xUTQ1NS43IDY0LjggNDUyLjcgNjcuNVE0NDkuNyA3MC4xIDQ0NS42IDcxLjZRNDQxLjQgNzMgNDM2LjIgNzNRNDMxLjMgNzMgNDI2LjggNzEuNlE0MjIuNCA3MC4yIDQxOSA2Ny4zUTQxNS42IDY0LjQgNDEzLjYgNTkuOVE0MTEuNyA1NS40IDQxMS43IDQ5LjNINDI2LjJRNDI2LjIgNTIuNiA0MjYuOSA1NC45UTQyNy41IDU3LjIgNDI4LjggNTguNVE0MzAuMiA1OS45IDQzMi4xIDYwLjZRNDM0LjEgNjEuMiA0MzYuNiA2MS4yUTQzOS41IDYxLjIgNDQxLjIgNjAuMVE0NDIuOSA1OSA0NDMuNiA1Ny4yUTQ0NC40IDU1LjQgNDQ0LjQgNTMuMVpNNTA0LjIgMFY3Mkg0ODkuOFYwWk01MjIuMSAwVjEySDQ3Mi4zVjBaIi8+PC9zdmc+" alt="ORACREST logo" width="545" height="108"></a>
+<button class="menu" aria-label="Toggle menu">Menu</button>
+<nav id="nav"><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#careers">Careers</a><a href="#contact">Contact Us</a></nav>
+<button class="tg" id="tg" type="button" aria-label="Switch to light mode" title="Light mode"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg></button>
+</div></header>
+<main id="app"></main>
+<footer><div class="w c" id="foot"></div></footer>
+<script>
+/* =====================================================================
+   ORACREST WEBSITE TEMPLATE - EDIT THIS BLOCK ONLY
+   1. Company details: change email, location, founded year, LinkedIn.
+   2. Job openings: add, edit or delete lines in JOBS (t = title,
+      m = location/type line, sk = skills). Leave m:'' to hide it.
+   3. Logo: replace the long data:image/svg+xml... text in the <img> inside
+      <header> with your own logo (a normal path like logo.png also works).
+   4. Colors: change --red (brand color) and --ink in the <style> :root.
+   5. Forms are demo-only until connected to a form service/backend.
+   ===================================================================== */
+const C={email:'info@oracrest.in',loc:'Noida, India',founded:'2023',linkedin:''};
+const JOBS=[
+ {t:'Oracle Fusion HCM Functional Consultant',m:'Location: India / project requirements · Full Time',sk:'Oracle Fusion HCM, Core HR, Compensation, Benefits, Talent Management, HCM Business Processes'},
+ {t:'Oracle Fusion HCM Consultant — Compensation &amp; Benefits',m:'',sk:'Oracle Workforce Compensation, Individual Compensation, Salary, Compensation Plans, Benefits, Oracle HCM Cloud'}
+];
+/* ====================================================== */
+const $=s=>document.querySelector(s);
+const IC=['<svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/></svg>','<svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>','<svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 3-6 6.5-6s6.5 2.4 6.5 6M16 4.8a3.4 3.4 0 0 1 0 6.4M18 14.4c2.2.7 3.5 2.6 3.5 5.6"/></svg>','<svg viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 9.5 4.3 4.3 0 0 1 17.5 18H7Z"/></svg>','<svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.2 8 8 9 4.8-1 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg>','<svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5Z"/><path d="M4 19a2 2 0 0 1 2-2h13"/></svg>','<svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg>','<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></svg>'];
+const cards=a=>`<div class="grid">${a.map(([t,d],i)=>`<div class="card"><span class="ic">${IC[i%IC.length]}</span><h3>${t}</h3><p>${d}</p></div>`).join('')}</div>`;
+const sec=(t,l,b,alt,id='')=>`<section class="sec${alt?' alt':''}"${id?` id="${id}"`:''}><div class="w"><h2 class="t">${t}</h2>${l?`<p class="lead">${l}</p>`:''}${b}</div></section>`;
+const hero=(t,s,b='')=>`<section class="hero s"><div class="w"><h1>${t}</h1><p class="sub">${s}</p>${b}</div></section>`;
+const band=(t,d,b)=>`<section class="band"><div class="w"><h2 class="t">${t}</h2><p class="lead">${d}</p>${b}</section>`.replace('</section>','</div></section>');
+const lnk=(x,h,c='')=>`<a class="btn ${c}" href="${h}">${x}</a>`;
+const go=(x,id,c='')=>`<button class="btn ${c}" data-go="${id}">${x}</button>`;
+const form=(id,fs,sub)=>`<form id="${id}" class="form">${fs.map(([l,t,o,f])=>`<label class="${f?'full':''}">${l}${t=='select'?`<select>${o.map(x=>`<option>${x}</option>`).join('')}</select>`:t=='area'?'<textarea rows="4"></textarea>':`<input type="${t}" ${o||''}>`}</label>`).join('')}<div class="full"><button class="btn">${sub}</button><p class="note" aria-live="polite"></p></div></form>`;
+const SV=[
+['Oracle Fusion HCM Consulting','Help organizations translate HR business requirements into effective Oracle Fusion HCM solutions.',['Requirement Analysis','Solution Design','Business Process Consulting','Configuration Guidance','Testing Support','Optimization']],
+['Compensation &amp; Benefits','Design and optimize compensation and benefits processes using Oracle Fusion HCM to support fair, transparent, and business-aligned reward strategies.',['Workforce Compensation','Individual Compensation','Salary Management','Compensation Planning','Market Adjustments','Bonus &amp; Incentive Processes','Total Compensation','Benefits Processes']],
+['Oracle Fusion HCM Implementation','Support organizations through the implementation lifecycle.',['Requirement Gathering','Solution Design','Configuration','Data Migration','Testing','User Acceptance Testing','Go-Live Support']],
+['HCM Optimization &amp; Support','Help organizations optimize existing configurations, resolve functional challenges, and improve business processes.',['Production Support','Issue Resolution','Process Improvements','Configuration Changes','Quarterly Update Support','Performance Optimization']],
+['Oracle Fusion HCM Training','Build practical Oracle Fusion HCM knowledge through structured, hands-on learning designed around real business scenarios.',['Oracle HCM Functional Training','Compensation Training','Core HR Training','Talent Management','Learning','Performance &amp; Goals','Practical Exercises','Real-World Scenarios']],
+['Cloud &amp; HR Digital Transformation','Modernize HR operations through Oracle Cloud technology and streamlined digital processes.',['Cloud HCM Transformation','HR Process Automation','Digital HR','Oracle Cloud Adoption','Process Optimization']]];
+const MODS=['Core HR','Compensation','Benefits','Talent Management','Learning','Performance','Goals','Recruiting'];
+const P={
+home:()=>`<section class="hero"><div class="w"><div><h1>Transform Your HR with <span class="hl">Oracle Fusion HCM</span></h1><p class="sub">ORACREST Consulting helps organizations simplify HR processes, optimize Oracle Fusion HCM, and drive digital transformation through practical consulting and technology expertise.</p><div class="btns">${lnk('Explore Our Services','#services')}${lnk('Talk to Us','#contact','o')}</div><ul class="pills"><li>Oracle Fusion HCM</li><li>All HCM Modules</li><li>Implementation &amp; Support</li></ul></div>
+<div class="art">${ART}</div></div></section>`
++STATS()+spl('Oracle Fusion HCM Expertise That Drives Business Transformation',`ORACREST Consulting is an Oracle-focused consulting company specializing in Oracle Fusion HCM solutions. We help organizations improve their HR processes through consulting, implementation, optimization, and training. Across all core modules, from Core HR to Compensation, Talent and Recruiting, we bring functional expertise and practical understanding to help organizations get greater value from Oracle Cloud HCM.`,WHAT)
++sec('Why ORACREST?','',cards([['Oracle Expertise','Deep functional knowledge of Oracle Fusion HCM.'],['Business-Focused Solutions','Solutions designed around real business processes and requirements.'],['Continuous Learning','Stay aligned with Oracle’s evolving Cloud HCM capabilities.'],['Practical Consulting','Focus on implementation, optimization, and real-world outcomes.']]),1)
++sec('Our Services','',cards(SV.map(s=>[s[0],s[1]]))+`<p style="margin-top:28px">${lnk('See all services','#services','o')}</p>`)
++sec('Oracle Fusion HCM Insights','Stay informed about the latest Oracle Fusion HCM features, product updates, and practical insights from our team.',`<div class="grid">${['Oracle Fusion Updates','HCM Best Practices','Compensation &amp; Benefits Insights'].map(x=>`<div class="card"><h3>${x}</h3><span class="tag">Articles coming soon</span></div>`).join('')}</div>`,1)
++band('Ready to Transform Your HCM Experience?','Let’s discuss how Oracle Fusion HCM can help your organization build smarter and more efficient HR processes.',lnk('Talk to ORACREST','#contact')),
+about:()=>hero('About ORACREST','Oracle Expertise. Business Understanding. Practical Solutions.')
++spl('Who We Are','ORACREST Consulting is an Oracle-focused consulting company dedicated to helping organizations unlock the value of Oracle Fusion HCM. We work at the intersection of technology, HR processes, and business requirements to help organizations implement, optimize, and continuously improve their HCM environment.',WHO)
++sec('Mission and vision','',cards([['Our Mission','To help organizations simplify HR operations and achieve greater business value through Oracle Fusion HCM technology and practical consulting expertise.'],['Our Vision','To become a trusted Oracle Fusion HCM consulting partner for organizations embracing modern, cloud-based HR transformation.']]),1)
++sec('What Makes Us Different?','',cards([['Full-Suite Expertise','Hands-on across all Oracle Fusion HCM modules.'],['Business First','Technology must solve real business problems.'],['Continuous Innovation','Stay connected with Oracle’s evolving HCM capabilities.'],['Knowledge Sharing','Encourage continuous learning and practical Oracle insights.']]))
++sec('Our Approach','',`<div class="grid">${[['Understand','Understand business requirements and existing processes.'],['Design','Design the right Oracle HCM solution.'],['Implement','Configure, test, and deploy the solution.'],['Optimize','Continuously improve the solution as business needs evolve.']].map(([t,d],i)=>`<div class="card"><span class="n">${i+1}</span><h3>${t}</h3><p>${d}</p></div>`).join('')}</div>`,1)
++sec('Company information','',`<div class="grid">${[['Founded',C.founded],['Core Expertise','Oracle Fusion HCM'],['Modules Covered','All Oracle HCM Modules'],['Primary Location',C.loc]].map(([a,b])=>`<div class="card"><p>${a}</p><h3 style="margin:6px 0 0">${b}</h3></div>`).join('')}</div>`),
+services:()=>hero('Oracle Fusion HCM Solutions','From implementation to optimization, we help organizations build effective and scalable Oracle Fusion HCM solutions.')
++`<section class="sec"><div class="w">${SV.map(s=>`<div class="svc"><div><h3>${s[0]}</h3><p>${s[1]}</p></div><ul class="chips">${s[2].map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('')}</div></section>`
++PROC+band('Have an Oracle HCM Challenge?','Let’s explore the right solution for your organization.',lnk('Talk to an Expert','#contact')),
+careers:()=>hero('Build Your Career with ORACREST','Join a team working at the intersection of Oracle Fusion HCM, cloud technology, and digital HR transformation.',go('View Open Positions','jobs'))
++sec('Why Join ORACREST?','',cards([['Learn &amp; Grow','Develop Oracle Fusion HCM knowledge through practical projects and continuous learning.'],['Work on Real Projects','Gain exposure to real business requirements, implementations, and HCM solutions.'],['Build Expertise','Strengthen expertise across Oracle HCM, Compensation &amp; Benefits, Talent, Learning, and other HCM areas.'],['Collaborative Environment','Work with experienced professionals in a collaborative and knowledge-sharing environment.']]))
++sec('A Culture of Learning &amp; Innovation','We encourage curiosity, knowledge sharing, collaboration, and continuous improvement.',cards([['Continuous Learning','Keep building Oracle HCM knowledge.'],['Team Collaboration','Share what we learn.'],['Oracle Innovation','Follow Oracle’s evolving capabilities.'],['Professional Growth','Grow your expertise project by project.']]),1)
++sec('Open Positions','',`<div class="grid">${JOBS.map(j=>`<div class="card job"><h3>${j.t}</h3>${j.m?`<p class="m">${j.m}</p>`:''}<p><b>Skills:</b> ${j.sk}</p><button class="btn" data-go="apply">Apply Now</button></div>`).join('')}</div>`,0,'jobs')
++cta('Don’t See the Right Role?','We’re always interested in connecting with talented professionals who are passionate about Oracle Fusion HCM and HR technology.',go('Send Your Resume','apply'),1)
++sec('Career application','',form('apply',[['Full Name','text','required'],['Email Address','email','required'],['Phone Number','tel'],['Current Location','text'],['Experience','text','placeholder="e.g. 3 years"'],['Primary Expertise','select',['Core HR','Compensation','Benefits','Talent','Learning','Performance','Recruiting','Technical','Other']],['Resume (PDF, DOC or DOCX)','file','accept=".pdf,.doc,.docx"'],['LinkedIn Profile','url'],['Message','area','',1]],'Submit Application'),0,'apply')
++band('Ready to Grow With ORACREST?','Take the next step in your Oracle Fusion HCM career.',go('Explore Opportunities','jobs')),
+contact:()=>hero('Let’s Build a Smarter HCM Future','Have an Oracle Fusion HCM requirement? Let’s discuss how ORACREST can help.')
++`<section class="sec" id="enquiry"><div class="w two"><div>${form('enq',[['Full Name','text','required'],['Business Email','email','required'],['Company','text'],['Phone Number','tel'],['Service Required','select',['Oracle HCM Consulting','HCM Implementation','Compensation &amp; Benefits','HCM Support','HCM Training','Other'],1],['Message','area','',1]],'Send Enquiry')}</div>
+<aside><h2 style="font-size:24px">Contact information</h2><dl><dt>Email</dt><dd><a href="mailto:${C.email}">${C.email}</a></dd><dt>Location</dt><dd>${C.loc}</dd></dl></aside></div></section>`
++band('Have an Oracle HCM Challenge?','Let’s explore the right solution for your organization.',go('Contact ORACREST','enquiry'))};
+function show(){let p=location.hash.slice(1);if(!P[p])p='home';$('#app').innerHTML=P[p]();document.querySelectorAll('nav a:not(.btn)').forEach(a=>a.toggleAttribute('aria-current',a.getAttribute('href')=='#'+p));scrollTo(0,0);enhance()}
+$('#foot').innerHTML=`<div><b>ORACREST Consulting</b>Oracle Fusion HCM Consulting &amp; Digital Transformation<br>© 2026 ORACREST Consulting. All Rights Reserved.</div><div><b>Links</b><a href="#home">Home</a>, <a href="#about">About Us</a>, <a href="#services">Services</a>, <a href="#careers">Careers</a>, <a href="#contact">Contact Us</a></div><div><b>Contact</b><a href="mailto:${C.email}">${C.email}</a><br>${C.loc}${C.linkedin?`<br><a href="${C.linkedin}">LinkedIn</a>`:''}</div>`;
+document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g){const el=document.getElementById(g.dataset.go);if(el)el.scrollIntoView({behavior:'smooth'})}
+ if(e.target.closest('.menu'))$('#nav').classList.toggle('open');else $('#nav').classList.remove('open')});
+document.addEventListener('submit',e=>{e.preventDefault();e.target.querySelector('.note').textContent=`Demo mode: this form isn’t connected to a backend yet, so nothing was sent. Please email ${C.email} instead.`});
+const LOGO=$('.logo img').src;
+const FL=(h,t)=>`<a href='${h}'>${t}</a>`;
+$('#foot').innerHTML=`<div class='fg'><div class='fb'><span class='fl'><img src='${LOGO}' alt='ORACREST Consulting'></span><p>Oracle Fusion HCM Consulting &amp; Digital Transformation</p><a class='btn' href='#contact'>Talk to an Expert</a></div><div><b>Company</b>${FL('#home','Home')}${FL('#about','About Us')}${FL('#services','Services')}${FL('#careers','Careers')}${FL('#contact','Contact Us')}</div><div><b>Services</b>${FL('#services','Oracle Fusion HCM Consulting')}${FL('#services','Compensation &amp; Benefits')}${FL('#services','HCM Implementation')}${FL('#services','HCM Training')}</div><div><b>Contact</b>${FL('mailto:'+C.email,C.email)}<span>${C.loc}</span>${C.linkedin?FL(C.linkedin,'LinkedIn'):''}</div></div><div class='fbot'>© 2026 ORACREST Consulting. All Rights Reserved.</div>`;
+function enhance(){const a=$('#app');a.classList.remove('pg');void a.offsetWidth;a.classList.add('pg');
+ a.querySelectorAll('.tiles span').forEach((s,i)=>s.style.setProperty('--i',i));
+ const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12}):null;
+ a.querySelectorAll('.sec .t,.sec .lead,.card,.svc,.form,aside,.band .w').forEach(el=>{const i=[...el.parentNode.children].indexOf(el);el.style.setProperty('--d',(i%4)*.09+'s');el.classList.add('rv');io?io.observe(el):el.classList.add('in')})}
+addEventListener('scroll',()=>$('header').classList.toggle('sc',scrollY>8),{passive:true});
+const spl=(t,l,r,alt,id='')=>`<section class='sec${alt?' alt':''}'${id?` id='${id}'`:''}><div class='w split'><div><h2 class='t'>${t}</h2><p class='lead'>${l}</p></div><div>${r}</div></div></section>`;
+const cta=(t,l,b,alt)=>`<section class='sec${alt?' alt':''}'><div class='w'><div class='ctar'><div><h2 class='t'>${t}</h2><p class='lead'>${l}</p></div><div>${b}</div></div></div></section>`;
+const WHAT=`<div class='what'><p class='wk'>What we do</p><div class='wg'>${[['Consulting','Functional guidance for Oracle Fusion HCM'],['Implementation','From requirements to go-live'],['Optimization','Improving existing HCM setups'],['Training','Practical, scenario-based learning']].map(([a,b],i)=>`<div class='wi'><span class='n'>${i+1}</span><h3>${a}</h3><p>${b}</p></div>`).join('')}</div><div class='wf'><b>Modules</b> Core HR, Compensation, Benefits, Talent, Learning, Performance, Goals &amp; Recruiting</div></div>`;
+const WHO=`<div class='what'><p class='wk'>We work at the intersection of</p><ul class='wl'>${[['Technology','Oracle Fusion HCM and cloud capabilities'],['HR Processes','Practical, well-designed HR operations'],['Business Requirements','Solutions shaped around real needs']].map(([a,b])=>`<li><h3>${a}</h3><p>${b}</p></li>`).join('')}</ul></div>`;
+const ART=`<svg viewBox='0 0 520 420' role='img' aria-label='HR analytics dashboard, org chart and cloud illustration'><circle cx='270' cy='210' r='176' fill='var(--red)' opacity='.07'/><circle cx='270' cy='210' r='132' fill='none' stroke='var(--red)' opacity='.3' stroke-dasharray='3 9' stroke-linecap='round'/><rect x='52' y='176' width='26' height='12' fill='var(--red)'/><rect x='78' y='176' width='26' height='12' fill='#CDD2D9'/><path d='M470 376h14M477 369v14' stroke='var(--red)' stroke-width='2.5' stroke-linecap='round'/><g class='f1' style='filter:drop-shadow(0 18px 28px rgba(20,23,28,.16))'><rect x='120' y='80' width='300' height='240' rx='14' fill='var(--card)' stroke='var(--line)'/><text x='142' y='106' class='th'>HCM Overview</text><text x='252' y='105' class='ts'>Sample data</text><line x1='120' y1='120' x2='420' y2='120' stroke='var(--line)'/><g fill='#CDD2D9'><rect x='146' y='218' width='24' height='52' rx='3'/><rect x='182' y='198' width='24' height='72' rx='3'/><rect x='218' y='210' width='24' height='60' rx='3'/></g><rect x='254' y='160' width='24' height='110' rx='3' fill='var(--red)'/><line x1='140' y1='270' x2='290' y2='270' stroke='var(--line)'/><polyline points='158,190 194,168 230,180 266,132' fill='none' stroke='#8A919C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><circle cx='362' cy='190' r='38' fill='none' stroke='#E3E6EA' stroke-width='14'/><circle cx='362' cy='190' r='38' fill='none' stroke='var(--red)' stroke-width='14' stroke-dasharray='155 240' stroke-linecap='round' transform='rotate(-90 362 190)'/><text x='362' y='196' text-anchor='middle' class='tn' style='font-size:16px'>65%</text><text x='362' y='262' text-anchor='middle' class='tc'>Goals on track</text><circle cx='146' cy='298' r='10' fill='#CDD2D9'/><circle cx='166' cy='298' r='10' fill='var(--red)'/><circle cx='186' cy='298' r='10' fill='#8A919C'/><rect x='214' y='294' width='90' height='8' rx='4' fill='#E3E6EA'/></g><g class='f2' style='filter:drop-shadow(0 14px 22px rgba(20,23,28,.15))'><rect x='36' y='252' width='150' height='112' rx='12' fill='var(--card)' stroke='var(--line)'/><path d='M111 286V302M78 322V302H144V322' fill='none' stroke='#CDD2D9' stroke-width='2'/><circle cx='111' cy='276' r='10' fill='var(--red)'/><circle cx='78' cy='331' r='9' fill='#8A919C'/><circle cx='144' cy='331' r='9' fill='#CDD2D9'/></g><g class='f3' style='filter:drop-shadow(0 14px 22px rgba(20,23,28,.15))'><rect x='376' y='36' width='100' height='68' rx='12' fill='var(--card)' stroke='var(--line)'/><g fill='var(--red)'><circle cx='410' cy='74' r='11'/><circle cx='428' cy='65' r='15'/><circle cx='446' cy='74' r='11'/><rect x='410' y='72' width='36' height='13' rx='6'/></g><text x='426' y='99' text-anchor='middle' class='tc' style='font-size:10px'>Cloud HCM</text></g><g class='f5' style='filter:drop-shadow(0 12px 20px rgba(20,23,28,.15))'><rect x='40' y='26' width='116' height='54' rx='12' fill='var(--card)' stroke='var(--line)'/><rect x='40' y='38' width='3' height='30' fill='var(--red)'/><text x='56' y='56' class='tn'>1,248</text><text x='56' y='71' class='tc'>Employees</text></g><g class='f6' style='filter:drop-shadow(0 12px 20px rgba(20,23,28,.15))'><rect x='430' y='128' width='88' height='54' rx='12' fill='var(--card)' stroke='var(--line)'/><rect x='430' y='140' width='3' height='30' fill='var(--red)'/><text x='444' y='158' class='tn'>8</text><text x='444' y='173' class='tc'>HCM modules</text></g><g class='f5' style='filter:drop-shadow(0 12px 20px rgba(20,23,28,.15))'><rect x='226' y='338' width='132' height='52' rx='12' fill='var(--card)' stroke='var(--line)'/><rect x='226' y='349' width='3' height='30' fill='var(--red)'/><text x='242' y='366' class='tn'>26D</text><text x='242' y='381' class='tc'>Quarterly update</text></g><g class='f4'><g transform='translate(452 322)'><circle r='20' fill='none' stroke='var(--red)' stroke-width='8' stroke-dasharray='7.85 7.85'/><circle r='16' fill='var(--red)'/><circle r='6' fill='var(--card)'/></g></g></svg>`;
+const STATS=()=>`<section class="stats"><div class="w"><div class="mstrip"><p>Modules we work on</p><ul>${MODS.map(x=>`<li>${x}</li>`).join('')}</ul></div></div></section>`;
+const MODSEC=`<section class="sec dk"><div class="w"><h2 class="t">Oracle Fusion HCM modules we cover</h2><p class="lead">Functional depth across the Oracle Cloud HCM suite, from Core HR to Compensation and Talent.</p><ul class="chips big">${MODS.map(x=>`<li>${x}</li>`).join('')}</ul></div></section>`;
+const PROC=`<section class="sec alt"><div class="w"><h2 class="t">How we deliver</h2><p class="lead">A clear, collaborative path from the first workshop to go-live and beyond.</p><ol class="steps">${[['Discover','Understand your HR processes and business requirements.'],['Design','Shape the right Oracle Fusion HCM solution.'],['Configure','Set up and validate the configuration.'],['Test','System and user acceptance testing.'],['Go-Live &amp; Support','Smooth launch with ongoing optimization.']].map(([a,b])=>`<li><h3>${a}</h3><p>${b}</p></li>`).join('')}</ol></div></section>`;
+(function(){const r=document.documentElement,b=$('#tg'),m=document.querySelector('meta[name=theme-color]');
+function sync(){const l=r.dataset.theme==='light';b.setAttribute('aria-label',l?'Switch to dark mode':'Switch to light mode');b.title=l?'Dark mode':'Light mode';if(m)m.content=l?'#ffffff':'#0D1220'}
+b.addEventListener('click',()=>{const n=r.dataset.theme==='light'?'dark':'light';r.classList.add('tt');r.dataset.theme=n;try{localStorage.setItem('oc-theme',n)}catch(e){}sync();setTimeout(()=>r.classList.remove('tt'),450)});sync()})();
+addEventListener('hashchange',show);show();
+</script>
+</body>
+</html>
