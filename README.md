@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ORACREST Consulting website
 
 Responsive Next.js website based on the supplied ORACREST design. Routes are `/`, `/about`, `/services`, `/careers`, and `/contact`.
@@ -18,3 +19,6 @@ The email credentials must be configured before production forms can send messag
 ## Production
 
 Run `npm run build` and `npm start`, or deploy the project to a Node.js-compatible Next.js host. Configure the environment variables in the host's deployment settings.
+=======
+# Oracrestconsulting
+>>>>>>> 6f2c614b551c25ad8fc3d4561c5872dec6797a40
