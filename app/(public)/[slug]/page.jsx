@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
-import Pages from "../../components/Pages";
-import { siteConfig } from "../../lib/site-config";
+import Pages from "../../../components/Pages";
+import { siteConfig } from "../../../lib/site-config";
 
-const pages = ["about", "services", "careers", "contact"];
+const pages = ["about", "services", "contact"];
 
 export function generateStaticParams() {
   return pages.map((slug) => ({ slug }));
@@ -13,7 +13,6 @@ export async function generateMetadata({ params }) {
   const titles = {
     about: "About ORACREST",
     services: "Oracle Fusion HCM Services",
-    careers: "Careers",
     contact: "Contact ORACREST",
   };
   return { title: titles[slug] || "ORACREST Consulting" };

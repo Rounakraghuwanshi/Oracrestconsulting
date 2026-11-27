@@ -12,7 +12,7 @@ import {
   WhatPanel,
   WhoPanel,
 } from "./SiteSections";
-import { deliverySteps, jobs, modules, services } from "../lib/content";
+import { deliverySteps, modules, services } from "../lib/content";
 
 function ModuleStrip() {
   return (
@@ -214,7 +214,7 @@ function ServicesPage() {
   );
 }
 
-function CareersPage() {
+function CareersPage({ jobs = [], jobsError = "" }) {
   return (
     <>
       <PageHero
@@ -248,16 +248,24 @@ function CareersPage() {
         />
       </Section>
       <Section title="Open Positions" id="jobs">
-        <div className="grid">
-          {jobs.map((job) => (
-            <div className="card job" key={job.title}>
-              <h3>{job.title}</h3>
-              {job.meta ? <p className="m">{job.meta}</p> : null}
-              <p><b>Skills:</b> {job.skills}</p>
-              <ButtonLink href="#apply">Apply Now</ButtonLink>
-            </div>
-          ))}
-        </div>
+        {jobsError ? (
+          <p className="note" role="status">{jobsError}</p>
+        ) : jobs.length ? (
+          <div className="grid">
+            {jobs.map((job) => (
+              <div className="card job" key={job.id}>
+                <h3>{job.title}</h3>
+                <p className="m">
+                  {[job.location, job.employmentType].filter(Boolean).join(" · ")}
+                </p>
+                <p><b>Skills:</b> {job.skills.join(", ")}</p>
+                <ButtonLink href={`/careers/${job.slug}`}>Apply Now</ButtonLink>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="note">There are no open positions right now. Please check back soon.</p>
+        )}
       </Section>
       <CallToAction
         title="Don’t See the Right Role?"
@@ -313,10 +321,10 @@ function ContactPage({ site }) {
   );
 }
 
-export default function Pages({ page, site }) {
+export default function Pages({ page, site, jobs, jobsError }) {
   if (page === "home") return <HomePage />;
   if (page === "about") return <AboutPage site={site} />;
   if (page === "services") return <ServicesPage />;
-  if (page === "careers") return <CareersPage />;
+  if (page === "careers") return <CareersPage jobs={jobs} jobsError={jobsError} />;
   return <ContactPage site={site} />;
 }

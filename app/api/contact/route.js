@@ -1,4 +1,5 @@
 import { siteConfig } from "../../../lib/site-config.js";
+import { findPublishedJobBySlug } from "../../../lib/jobs.js";
 
 export const runtime = "nodejs";
 
@@ -65,6 +66,10 @@ export async function POST(request) {
   if (kind !== "application" && kind !== "enquiry") {
     return jsonError("The form type is invalid.", 400);
   }
+  const jobSlug = text(form, "jobSlug", 180);
+  if (jobSlug && kind !== "application") {
+    return jsonError("The selected job application is invalid.", 400);
+  }
 
   const fields = {
     "Full name": text(form, "name", 160),
@@ -83,6 +88,18 @@ export async function POST(request) {
         }),
     Message: text(form, "message", 4000),
   };
+
+  if (jobSlug) {
+    let job;
+    try {
+      job = await findPublishedJobBySlug(jobSlug);
+    } catch (error) {
+      console.error("Could not verify the job application.", error);
+      return jsonError("Job applications are temporarily unavailable. Please try again later.", 503);
+    }
+    if (!job) return jsonError("This job is no longer accepting applications.", 404);
+    fields["Position applied for"] = job.title;
+  }
 
   if (!fields["Full name"] || !fields.Email) {
     return jsonError("Please provide your name and email address.", 400);

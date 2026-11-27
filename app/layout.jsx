@@ -1,9 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font -- App Router loads the shared font from the root layout. */
 import "./globals.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import PageEffects from "../components/PageEffects";
-import { siteConfig } from "../lib/site-config";
 
 export const metadata = {
   title: {
@@ -37,12 +33,7 @@ export default function RootLayout({ children }) {
         />
         <script dangerouslySetInnerHTML={{ __html: themeInitialization }} />
       </head>
-      <body>
-        <Header />
-        <PageEffects />
-        {children}
-        <Footer site={siteConfig} />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

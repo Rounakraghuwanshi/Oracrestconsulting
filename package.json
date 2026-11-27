@@ -8,10 +8,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "test": "node --test"
+    "test": "node --test",
+    "db:migrate": "node scripts/migrate.js",
+    "admin:hash": "node scripts/hash-admin-password.js"
   },
   "dependencies": {
+    "@next/env": "^16.4.6",
     "next": "^16.4.6",
+    "pg": "^8.23.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

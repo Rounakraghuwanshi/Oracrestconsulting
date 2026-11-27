@@ -94,7 +94,7 @@ function Field({ field }) {
   );
 }
 
-export default function ContactForm({ kind }) {
+export default function ContactForm({ kind, jobSlug }) {
   const [status, setStatus] = useState({ kind: "", message: "" });
   const isApplication = kind === "application";
   const fields = isApplication ? careerFields : enquiryFields;
@@ -125,6 +125,7 @@ export default function ContactForm({ kind }) {
   return (
     <form className="form" onSubmit={submitForm}>
       <input type="hidden" name="kind" value={kind} />
+      {jobSlug ? <input type="hidden" name="jobSlug" value={jobSlug} /> : null}
       {fields.map((field) => (
         <Field field={field} key={field.name} />
       ))}
